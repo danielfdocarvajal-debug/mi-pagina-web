@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Descubre Australia | Discover Australia</title>
+
+  <meta
+    name="description"
+    content="Sitio web bilingüe sobre Australia: cultura, naturaleza, ciudades, fauna e identidad australiana."
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+
+      <a href="#inicio" class="logo-btn nav-box" aria-label="Ir al inicio">
+        <span class="logo-mark">AU</span>
+        <span
+          class="logo-text"
+          data-es="Descubre Australia"
+          data-en="Discover Australia"
+        >
+          Descubre Australia
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+
+        <div class="nav-dropdown">
+          <a
+            href="#inicio"
+            class="nav-box nav-link"
+            data-es="Inicio"
+            data-en="Home"
+          >
+            Inicio
+          </a>
+        </div>
+
+        <div class="nav-dropdown">
+          <a
+            href="#cultura"
+            class="nav-box nav-link"
+            data-es="Cultura"
+            data-en="Culture"
+          >
+            Cultura
+          </a>
+
+          <div class="dropdown-menu" aria-label="Submenú de cultura">
+            <a
+              href="#cultura"
+              data-es="First Nations"
+              data-en="First Nations"
+            >
+              First Nations
+            </a>
+
+            <a
+              href="#identidad"
+              data-es="Identidad australiana"
+              data-en="Australian identity"
+            >
+              Identidad australiana
+            </a>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <a
+            href="#naturaleza"
+            class="nav-box nav-link"
+            data-es="Naturaleza"
+            data-en="Nature"
+          >
+            Naturaleza
+          </a>
+
+          <div class="dropdown-menu" aria-label="Submenú de naturaleza">
+            <a
+              href="#naturaleza"
+              data-es="Gran Barrera de Coral"
+              data-en="Great Barrier Reef"
+            >
+              Gran Barrera de Coral
+            </a>
+
+            <a
+              href="#identidad"
+              data-es="Turismo responsable"
+              data-en="Responsible tourism"
+            >
+              Turismo responsable
+            </a>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <a
+            href="#ciudades"
+            class="nav-box nav-link"
+            data-es="Ciudades"
+            data-en="Cities"
+          >
+            Ciudades
+          </a>
+
+          <div class="dropdown-menu" aria-label="Submenú de ciudades">
+            <a href="#ciudades" data-es="Sídney" data-en="Sydney">
+              Sídney
+            </a>
+
+            <a href="#ciudades" data-es="Melbourne" data-en="Melbourne">
+              Melbourne
+            </a>
+
+            <a href="#ciudades" data-es="Brisbane" data-en="Brisbane">
+              Brisbane
+            </a>
+          </div>
+        </div>
+
+      </nav>
+
+      <div class="lang-switch" aria-label="Selector de idioma">
+        <button
+          class="nav-box lang-btn active"
+          type="button"
+          data-lang="es"
+          aria-label="Cambiar idioma a español"
+          aria-pressed="true"
+        >
+          ES
+        </button>
+
+        <button
+          class="nav-box lang-btn"
+          type="button"
+          data-lang="en"
+          aria-label="Change language to English"
+          aria-pressed="false"
+        >
+          EN
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-overlay">
+        <div class="container hero-content">
+
+          <p
+            class="hero-kicker"
+            data-es="Sitio web académico bilingüe"
+            data-en="Bilingual academic website"
+          >
+            Sitio web académico bilingüe
+          </p>
+
+          <p id="dynamic-welcome" class="dynamic-welcome" aria-live="polite">
+            Bienvenido a Descubre Australia
+          </p>
+
+          <h1
+            id="hero-title"
+            data-es="DESCUBRE AUSTRALIA"
+            data-en="DISCOVER AUSTRALIA"
+          >
+            DESCUBRE AUSTRALIA
+          </h1>
+
+          <p
+            class="hero-subtitle"
+            data-es="Explora cultura, naturaleza y ciudades"
+            data-en="Explore culture, nature and cities"
+          >
+            Explora cultura, naturaleza y ciudades
+          </p>
+
+          <a
+            href="#explora"
+            class="hero-btn"
+            data-es="EXPLORAR"
+            data-en="EXPLORE"
+            aria-label="Ir a la sección Explora"
+          >
+            EXPLORAR
+          </a>
+
+          <div class="hero-slider-controls" aria-label="Controles del slider principal">
+            <button
+              class="hero-arrow"
+              type="button"
+              id="prevSlide"
+              aria-label="Imagen anterior"
+            >
+              ‹
+            </button>
+
+            <div class="hero-dots">
+              <button class="dot active" type="button" data-slide="0" aria-label="Ver imagen 1"></button>
+              <button class="dot" type="button" data-slide="1" aria-label="Ver imagen 2"></button>
+              <button class="dot" type="button" data-slide="2" aria-label="Ver imagen 3"></button>
+              <button class="dot" type="button" data-slide="3" aria-label="Ver imagen 4"></button>
+              <button class="dot" type="button" data-slide="4" aria-label="Ver imagen 5"></button>
+            </div>
+
+            <button
+              class="hero-arrow"
+              type="button"
+              id="nextSlide"
+              aria-label="Imagen siguiente"
+            >
+              ›
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="explore-section section" id="explora" aria-labelledby="explora-title">
+      <div class="container">
+
+        <div class="section-title-wrap">
+          <span class="section-line" aria-hidden="true"></span>
+          <h2 id="explora-title" data-es="Explora" data-en="Explore">
+            Explora
+          </h2>
+          <span class="section-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="explore-row">
+          <button
+            class="arrow-btn"
+            type="button"
+            aria-label="Desplazar hacia la izquierda"
+          >
+            ‹
+          </button>
+
+          <div class="explore-grid">
+
+            <a class="explore-card" href="#cultura" aria-label="Ir a la sección Cultura">
+              <div
+                class="explore-image"
+                style="background-image: url(imagenes/cultura-australia.jpeg);"
+                role="img"
+                aria-label="Imagen representativa de la cultura australiana"
+              ></div>
+
+              <div class="explore-info">
+                <h3 data-es="Cultura" data-en="Culture">Cultura</h3>
+                <p
+                  data-es="Símbolos nacionales, First Nations, patrimonio cultural y eventos."
+                  data-en="National symbols, First Nations, cultural heritage and events."
+                >
+                  Símbolos nacionales, First Nations, patrimonio cultural y eventos.
+                </p>
+              </div>
+            </a>
+
+            <a class="explore-card" href="#naturaleza" aria-label="Ir a la sección Naturaleza">
+              <div
+                class="explore-image"
+                style="background-image: url(imagenes/9.3-que-ver-en-australia.jpg);"
+                role="img"
+                aria-label="Paisaje natural representativo de Australia"
+              ></div>
+
+              <div class="explore-info">
+                <h3 data-es="Naturaleza" data-en="Nature">Naturaleza</h3>
+                <p
+                  data-es="Great Barrier Reef, Uluru, parques nacionales y turismo responsable."
+                  data-en="Great Barrier Reef, Uluru, national parks and responsible tourism."
+                >
+                  Great Barrier Reef, Uluru, parques nacionales y turismo responsable.
+                </p>
+              </div>
+            </a>
+
+            <a class="explore-card" href="#ciudades" aria-label="Ir a la sección Ciudades">
+              <div
+                class="explore-image"
+                style="background-image: url(imagenes/QSWauSjGpVUSsNPaGZDw.jpg);"
+                role="img"
+                aria-label="Vista urbana de ciudades principales de Australia"
+              ></div>
+
+              <div class="explore-info">
+                <h3 data-es="Ciudades" data-en="Cities">Ciudades</h3>
+                <p
+                  data-es="Sídney, Melbourne, Brisbane, Perth y Canberra."
+                  data-en="Sydney, Melbourne, Brisbane, Perth and Canberra."
+                >
+                  Sídney, Melbourne, Brisbane, Perth y Canberra.
+                </p>
+              </div>
+            </a>
+
+            <a class="explore-card" href="#fauna" aria-label="Ir a la sección Fauna">
+              <div
+                class="explore-image"
+                style="background-image: url(imagenes/60d1a6c687242.jpeg);"
+                role="img"
+                aria-label="Imagen de fauna emblemática australiana"
+              ></div>
+
+              <div class="explore-info">
+                <h3 data-es="Fauna" data-en="Wildlife">Fauna</h3>
+                <p
+                  data-es="Canguro, koala, emú, ornitorrinco y demonio de Tasmania."
+                  data-en="Kangaroo, koala, emu, platypus and Tasmanian devil."
+                >
+                  Canguro, koala, emú, ornitorrinco y demonio de Tasmania.
+                </p>
+              </div>
+            </a>
+
+          </div>
+
+          <button
+            class="arrow-btn"
+            type="button"
+            aria-label="Desplazar hacia la derecha"
+          >
+            ›
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="welcome-section section" id="bienvenida" aria-labelledby="bienvenida-title">
+      <div class="container welcome-grid">
+
+        <div class="welcome-media">
+          <img
+            src="imagenes/vertical-shot-australian-flag-sea-crowded-bondi-beach.jpg"
+            alt="Paisaje representativo de Australia"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="welcome-text">
+          <h2
+            id="bienvenida-title"
+            data-es="Bienvenidos a Australia"
+            data-en="Welcome to Australia"
+          >
+            Bienvenidos a Australia
+          </h2>
+
+          <p
+            data-es="Australia es un país biodiverso, moderno y multicultural, reconocido por sus paisajes únicos, sus ciudades vibrantes, su fauna emblemática y la riqueza cultural de las First Nations. Este sitio web ofrece una visión general de su patrimonio natural, cultural y urbano, promoviendo el conocimiento intercultural y el turismo responsable."
+            data-en="Australia is a biodiverse, modern and multicultural country, known for its unique landscapes, vibrant cities, iconic wildlife and the cultural richness of First Nations peoples. This website offers an overview of its natural, cultural and urban heritage, promoting intercultural understanding and responsible tourism."
+          >
+            Australia es un país biodiverso, moderno y multicultural, reconocido por sus paisajes únicos, sus ciudades vibrantes, su fauna emblemática y la riqueza cultural de las First Nations. Este sitio web ofrece una visión general de su patrimonio natural, cultural y urbano, promoviendo el conocimiento intercultural y el turismo responsable.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="content-panels section" aria-label="Secciones informativas sobre Australia">
+      <div class="container content-grid">
+
+        <article class="content-panel" id="cultura" tabindex="-1" aria-labelledby="cultura-title">
+          <div class="panel-badge" data-es="Cultura" data-en="Culture">
+            Cultura
+          </div>
+
+          <h3
+            id="cultura-title"
+            data-es="Símbolos nacionales, herencia viva y celebraciones"
+            data-en="National symbols, living heritage and celebrations"
+          >
+            Símbolos nacionales, herencia viva y celebraciones
+          </h3>
+
+          <p
+            data-es="La identidad cultural australiana integra símbolos nacionales, expresiones contemporáneas y la presencia viva de las First Nations. La música, el arte, el deporte y los festivales reflejan una sociedad diversa y abierta al intercambio intercultural."
+            data-en="Australian cultural identity brings together national symbols, contemporary expressions and the living presence of First Nations peoples. Music, art, sport and festivals reflect a diverse society open to intercultural exchange."
+          >
+            La identidad cultural australiana integra símbolos nacionales, expresiones contemporáneas y la presencia viva de las First Nations. La música, el arte, el deporte y los festivales reflejan una sociedad diversa y abierta al intercambio intercultural.
+          </p>
+        </article>
+
+        <article class="content-panel" id="naturaleza" tabindex="-1" aria-labelledby="naturaleza-title">
+          <div class="panel-badge" data-es="Naturaleza" data-en="Nature">
+            Naturaleza
+          </div>
+
+          <h3
+            id="naturaleza-title"
+            data-es="Arrecifes, desiertos, montañas y conservación"
+            data-en="Reefs, deserts, mountains and conservation"
+          >
+            Arrecifes, desiertos, montañas y conservación
+          </h3>
+
+          <p
+            data-es="Australia alberga ecosistemas extraordinarios como la Gran Barrera de Coral, Uluru y numerosos parques nacionales. La conservación ambiental y el turismo responsable son fundamentales para proteger su biodiversidad y sus paisajes icónicos."
+            data-en="Australia is home to extraordinary ecosystems such as the Great Barrier Reef, Uluru and many national parks. Environmental conservation and responsible tourism are essential to protect its biodiversity and iconic landscapes."
+          >
+            Australia alberga ecosistemas extraordinarios como la Gran Barrera de Coral, Uluru y numerosos parques nacionales. La conservación ambiental y el turismo responsable son fundamentales para proteger su biodiversidad y sus paisajes icónicos.
+          </p>
+        </article>
+
+        <article class="content-panel" id="ciudades" tabindex="-1" aria-labelledby="ciudades-title">
+          <div class="panel-badge" data-es="Ciudades" data-en="Cities">
+            Ciudades
+          </div>
+
+          <h3
+            id="ciudades-title"
+            data-es="Espacios multiculturales, modernos y dinámicos"
+            data-en="Multicultural, modern and dynamic spaces"
+          >
+            Espacios multiculturales, modernos y dinámicos
+          </h3>
+
+          <p
+            data-es="Sídney, Melbourne, Brisbane, Perth y Canberra representan distintas dimensiones del desarrollo australiano. Son ciudades que combinan innovación, oferta cultural, sostenibilidad urbana y una fuerte conexión con su entorno natural."
+            data-en="Sydney, Melbourne, Brisbane, Perth and Canberra represent different dimensions of Australian development. These cities combine innovation, cultural life, urban sustainability and a strong connection with the natural environment."
+          >
+            Sídney, Melbourne, Brisbane, Perth y Canberra representan distintas dimensiones del desarrollo australiano. Son ciudades que combinan innovación, oferta cultural, sostenibilidad urbana y una fuerte conexión con su entorno natural.
+          </p>
+        </article>
+
+        <article class="content-panel" id="fauna" tabindex="-1" aria-labelledby="fauna-title">
+          <div class="panel-badge" data-es="Fauna" data-en="Wildlife">
+            Fauna
+          </div>
+
+          <h3
+            id="fauna-title"
+            data-es="Especies emblemáticas y riqueza biológica"
+            data-en="Iconic species and biological richness"
+          >
+            Especies emblemáticas y riqueza biológica
+          </h3>
+
+          <p
+            data-es="La fauna australiana es una de las más singulares del planeta. El canguro, el koala, el emú, el ornitorrinco y el demonio de Tasmania son parte del imaginario nacional y del valor ecológico del territorio."
+            data-en="Australian wildlife is among the most unique on the planet. The kangaroo, koala, emu, platypus and Tasmanian devil are part of the national imagination and the ecological value of the land."
+          >
+            La fauna australiana es una de las más singulares del planeta. El canguro, el koala, el emú, el ornitorrinco y el demonio de Tasmania son parte del imaginario nacional y del valor ecológico del territorio.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="identity-section section" id="identidad" aria-labelledby="identidad-title">
+      <div class="container">
+
+        <div class="section-title-wrap">
+          <span class="section-line" aria-hidden="true"></span>
+
+          <h2
+            id="identidad-title"
+            data-es="Nuestra Identidad Australiana"
+            data-en="Our Australian Identity"
+          >
+            Nuestra Identidad Australiana
+          </h2>
+
+          <span class="section-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="identity-grid">
+
+          <article class="identity-card" aria-labelledby="colores-title">
+            <div class="identity-image-wrap">
+              <img
+                src="imagenes/australia-colores-nacionales.jpg"
+                alt="Colores nacionales de Australia"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="identity-content">
+              <h3
+                id="colores-title"
+                data-es="Colores nacionales"
+                data-en="National colors"
+              >
+                Colores nacionales
+              </h3>
+
+              <p
+                data-es="El verde y oro son colores oficiales de Australia y representan orgullo nacional, identidad deportiva y presencia internacional."
+                data-en="Green and gold are Australia’s official colors and represent national pride, sporting identity and international presence."
+              >
+                El verde y oro son colores oficiales de Australia y representan orgullo nacional, identidad deportiva y presencia internacional.
+              </p>
+            </div>
+          </article>
+
+          <article class="identity-card" aria-labelledby="patrimonio-title">
+            <div class="identity-image-wrap">
+              <img
+                src="imagenes/3-AUSTRALIA-iStock_000035410064XLarge.jpg"
+                alt="Patrimonio cultural y natural de Australia"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="identity-content">
+              <h3
+                id="patrimonio-title"
+                data-es="Patrimonio cultural"
+                data-en="Cultural heritage"
+              >
+                Patrimonio cultural
+              </h3>
+
+              <p
+                data-es="Australia reúne riqueza natural y cultural, desde la Gran Barrera de Coral y Uluru hasta la continuidad de las culturas indígenas."
+                data-en="Australia brings together natural and cultural richness, from the Great Barrier Reef and Uluru to the living continuity of Indigenous cultures."
+              >
+                Australia reúne riqueza natural y cultural, desde la Gran Barrera de Coral y Uluru hasta la continuidad de las culturas indígenas.
+              </p>
+            </div>
+          </article>
+
+          <article class="identity-card" aria-labelledby="turismo-title">
+            <div class="identity-image-wrap">
+              <img
+                src="imagenes/woman-reserve-is-playing-with-kangaroo.jpg"
+                alt="Turismo responsable en Australia"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="identity-content">
+              <h3
+                id="turismo-title"
+                data-es="Turismo responsable"
+                data-en="Responsible tourism"
+              >
+                Turismo responsable
+              </h3>
+
+              <p
+                data-es="La conservación ambiental, el respeto por sitios patrimoniales y la valoración de la biodiversidad son claves para visitar Australia de manera responsable."
+                data-en="Environmental conservation, respect for heritage sites and appreciation of biodiversity are key to visiting Australia responsibly."
+              >
+                La conservación ambiental, el respeto por sitios patrimoniales y la valoración de la biodiversidad son claves para visitar Australia de manera responsable.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="#inicio" class="footer-logo" aria-label="Volver al inicio">
+          <span class="footer-logo-mark">AU</span>
+          <span data-es="Descubre Australia" data-en="Discover Australia">
+            Descubre Australia
+          </span>
+        </a>
+
+        <p
+          data-es="Proyecto universitario sobre Australia: cultura, naturaleza, ciudades, fauna e identidad."
+          data-en="University project about Australia: culture, nature, cities, wildlife and identity."
+        >
+          Proyecto universitario sobre Australia: cultura, naturaleza, ciudades, fauna e identidad.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4 data-es="Enlaces rápidos" data-en="Quick links">
+          Enlaces rápidos
+        </h4>
+
+        <a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
+        <a href="#explora" data-es="Explora" data-en="Explore">Explora</a>
+        <a href="#identidad" data-es="Identidad" data-en="Identity">Identidad</a>
+      </div>
+
+      <div class="footer-social">
+        <h4 data-es="Redes" data-en="Social">Redes</h4>
+
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+
+      <div class="footer-lang">
+        <h4 data-es="Idioma" data-en="Language">Idioma</h4>
+
+        <div class="footer-lang-buttons">
+          <button
+            type="button"
+            class="footer-lang-btn active"
+            data-lang="es"
+            aria-label="Cambiar idioma a español"
+            aria-pressed="true"
+          >
+            ES
+          </button>
+
+          <button
+            type="button"
+            class="footer-lang-btn"
+            data-lang="en"
+            aria-label="Change language to English"
+            aria-pressed="false"
+          >
+            EN
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p
+        data-es="© 2026 Descubre Australia. Todos los derechos reservados."
+        data-en="© 2026 Discover Australia. All rights reserved."
+      >
+        © 2026 Descubre Australia. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/java.js"></script>
+</body>
+</html>
